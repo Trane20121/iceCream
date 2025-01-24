@@ -10,7 +10,7 @@ sap.ui.define(
     "use strict";
 
     return Controller.extend(
-      "sap.suite.ui.commons.demokit.tutorial.icecream.03.controller.Startpage",
+      "sap.suite.ui.commons.demokit.tutorial.icecream.01.controller.Startpage",
       {
         onInit: function () {
           var sDataPath =

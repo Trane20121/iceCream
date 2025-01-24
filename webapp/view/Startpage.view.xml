@@ -134,6 +134,24 @@
                     </GenericTile>
                 </SlideTile>
             </layout:HorizontalLayout>
+            <Title
+                titleStyle="H2"
+                text="{i18n>startpageLinksGroupTitle}"
+                class="sapUiTinyMarginBegin sapUiMediumMarginTop"
+            />
+            <layout:HorizontalLayout allowWrapping="true">
+                <GenericTile
+                    header="{i18n>startpageLineTile1Title}"
+                    subheader="{i18n>startpageLineTile1SubTitle}"
+                    mode="LineMode"
+                    class="sapUiTinyMarginBegin"
+                />
+                <GenericTile
+                    header="{i18n>startpageLineTile2Title}"
+                    mode="LineMode"
+                    class="sapUiTinyMarginBegin"
+                />
+            </layout:HorizontalLayout>
         </layout:VerticalLayout>
     </Page>
 </mvc:View>
