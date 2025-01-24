@@ -15,8 +15,9 @@ sap.ui.define(
         onInit: function () {
           var sDataPath =
             //sap.ui.require.toUrl
-            jQuery.sap.getResourcePath("sap/suite/ui/commons/demokit/tutorial/icecream/01/model/data") +
-            "/News.json";
+            jQuery.sap.getResourcePath(
+              "sap/suite/ui/commons/demokit/tutorial/icecream/01/model/data"
+            ) + "/News.json";
           var oModel = new JSONModel(sDataPath);
           this.getView().setModel(oModel, "news");
         },
@@ -50,6 +51,22 @@ sap.ui.define(
         formatJSONDate: function (date) {
           var oDate = new Date(Date.parse(date));
           return oDate.toLocaleDateString();
+        },
+
+        onNavToProcessFlow: function () {
+          this.getRouter().navTo("processFlow");
+        },
+
+        onNavToReviews: function () {
+          this.getRouter().navTo("reviews");
+        },
+
+        onNavToChartContainer: function () {
+          this.getRouter().navTo("chartContainer");
+        },
+
+        getRouter: function () {
+          return this.getOwnerComponent().getRouter();
         },
       }
     );

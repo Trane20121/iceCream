@@ -34,12 +34,7 @@
 			"desktop": true,
 			"tablet": true,
 			"phone": true
-		},
-		"supportedThemes": [
-			"sap_hcb",
-			"sap_hcw",
-			"sap_horizon"
-		]
+		}
 	},
 	"sap.ui5": {
 		"_version": "1.1.0",
